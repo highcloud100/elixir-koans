@@ -37,32 +37,32 @@ defmodule Numbers do
   end
 
   koan "Release the decimals into the void" do
-    assert trunc(5.6) === ___
+    assert trunc(5.6) === 5
   end
 
   koan "Are you odd?" do
-    assert Integer.is_odd(3) == ___
+    assert Integer.is_odd(3) == true
   end
 
   koan "Actually you might be even" do
-    assert Integer.is_even(4) == ___
+    assert Integer.is_even(4) == true
   end
 
   koan "Let's grab the individual digits in a list" do
     individual_digits = Integer.digits(58127)
-    assert individual_digits == ___
+    assert individual_digits == [5,8,1,2,7]
   end
 
   koan "Oh no! I need it back together" do
     number = Integer.undigits([1, 2, 3, 4])
 
-    assert number == ___
+    assert number == 1234
   end
 
   koan "Actually I want my number as a string" do
     string_digit = Integer.to_string(1234)
 
-    assert string_digit == ___
+    assert string_digit == "1234"
   end
 
   koan "The meaning of life in hexadecimal is 2A!" do
